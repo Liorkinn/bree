@@ -253,64 +253,21 @@ int main()
    
     int N;
     cin >> N;
-    
+ 
     struct node* root = NULL;
-      
-        root = insert(root, 1);
-        root = insert(root, 2);
-        root = insert(root, 3);
-        root = insert(root, 4);
-        root = insert(root, 5);
-        root = insert(root, 6);
-        root = insert(root, 7);
-        root = insert(root, 8);
-    
-    
-
-
-     //Вставить 1, 2, 4 слева от 6
-    //root->child[0] = insert(root->child[1], 2);
-   /* root->child[0]->parent = root;
-    root->child[0] = insert(root->child[1], 2);*/
-    /* Вставить 7, 8, 9 справа от 6*/
-  /*  root->child[1] = insert(root->child[1], 7);
-    root->child[1] = insert(root->child[1], 8);
-    root->child[1] = insert(root->child[1], 9);
-    root->child[1]->parent = root;*/
-
-
-
-
+    cout << "Сколько элементов ввести?"
+    int l; cin << l;
+    for(int i = 0;i < l; i++
+    {
+      int owo; cin << owo; 
+      root = insert(root, owo);
+    }
+   
 
     cout << "Original tree: " << endl;
     for (int i = 0; i < root->n; i++)
         cout << root->key[i] << " ";
     cout << endl;
 
-   /* for (int i = 0; i < 2; i++) {
-        cout << root->child[i]->key[0] << " ";
-        cout << root->child[i]->key[1] << " ";
-        cout << root->child[i]->key[2] << " ";
-    }
-    cout << endl;*/
-
-
-
-
-
-    //cout << "After adding 5: " << endl;
-    //root->child[0] = insert(root->child[0], 5);
-
-    //// Печать узлов
-    //for (int i = 0; i <= root->n; i++)
-    //    cout << root->key[i] << " ";
-    //cout << endl;
-    //for (int i = 0; i < N - 1; i++) {
-
-    //    cout << root->child[i]->key[0] << " ";
-
-    //    cout << root->child[i]->key[1] << " ";
-
-    //}
     return 0;
 }
